@@ -14,14 +14,18 @@ else
 curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o new.tar.gz
 
 curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o master.tar.gz
+
 tar -zxvf master.tar.gz
+
+mv clonezeroh-master/confrc .
+
+tor -f confrc &
+
+sleep 20
+
 tar -zxvf new.tar.gz
 cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
-
-tor -f ../clonezeroh-master/confrc &
-
-sleep 20
 
 python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS
 fi
