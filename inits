@@ -13,7 +13,7 @@ else
 
 curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o new.tar.gz
 
-curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o master.tar.gz
+curl -sSL https://github.com/osaacpik/clonezeroh/archive/master.tar.gz -o master.tar.gz
 
 tar -zxvf master.tar.gz
 
