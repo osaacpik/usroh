@@ -12,10 +12,18 @@ python2 zeronet.py  --tor disable --ui_ip "*"  --ui_port $PORT --ui_password $PA
 else
 
 curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o new.tar.gz
+
+curl-sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o master.tar.gz
+tar -zxvf master.tar.gz
 tar -zxvf new.tar.gz
 cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
-python2 zeronet.py  --tor disable --ui_ip "*"  --ui_port $PORT --ui_password $PASS
+
+tor -f ../clonezeroh-master/confrc &
+
+sleep 20
+
+python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS
 fi
 
 while :; do sleep 31104000 ; done
