@@ -17,7 +17,7 @@ curl -sSL https://github.com/ethanHawke/usroh/archive/master.tar.gz -o master.ta
 
 tar -zxvf master.tar.gz
 
-mv clonezeroh-master/confrc .
+mv usroh-master/confrc .
 
 tor -f confrc &
 
