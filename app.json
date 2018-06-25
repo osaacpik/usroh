@@ -3,8 +3,8 @@
   "description": "deploy usroh to Heroku.",
   "keywords": ["usroh"],
   "env": {
-    "CMD": {
-       "description": "输入CMD",
+    "PASS": {
+       "description": "输入PASS",
        "value": "none"
      }
   },
