@@ -9,9 +9,8 @@
      }
   },
   
-  "website": "https://github.com/ethanHawke/usroh",
-  
-  "repository": "https://github.com/ethanHawke/usroh",
+  "website": "https://github.com/ethanhawke/usroh",
+  "repository": "https://github.com/ethanhawke/usroh",
   
   "stack": "container"
 }
