@@ -6,6 +6,16 @@
     "PASS": {
        "description": "输入PASS",
        "value": "none"
+     },
+    
+    "Site1": {
+       "description": "输入Site1",
+       "value": "none"
+     },
+   
+    "Site2": {
+       "description": "输入Site2",
+       "value": "none"
      }
   },
   
