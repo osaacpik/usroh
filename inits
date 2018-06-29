@@ -20,7 +20,7 @@ mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
 python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
 
-sleep 180
+sleep 20
 
 killall python2 
 
