@@ -18,15 +18,8 @@ tar -zxvf new.tar.gz
 cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
-python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
 
-sleep 20
-
-killall python2 
-
-sleep 5
-
-python2 zeronet.py   --tor always  siteDownload $Site1
+python2 zeronet.py   --tor always  siteDownload $Site1 
 
 python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS 
 
