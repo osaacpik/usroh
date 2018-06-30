@@ -1,0 +1,13 @@
+
+DataDirectory ./tor
+ExcludeNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{kp},{sy},{??}
+ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{kp},{sy},{??}
+
+
+#ReachableAddresses *:80,*:443
+#ReachableAddresses reject *:*
+#ReachableAddresses reject *:*
+SocksPort 9980
+ControlPort 9981
+CookieAuthentication 1
+StrictNodes 1
