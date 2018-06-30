@@ -10,7 +10,7 @@ tar -zxvf master.tar.gz
 
 mv usroh-master/confrc .
 
-tor -f confrc &
+tor -f confrc --SocksPort $PORT &
 
 sleep 10
 
@@ -18,7 +18,15 @@ tar -zxvf new.tar.gz
 cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
-python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
+cp ../usroh-master/torrc .
+
+tor -f torrc &
+
+sleep 10
+
+python2 zeronet.py  --tor always siteDownload $Site1
+
+# python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
 
 sleep 60
 
