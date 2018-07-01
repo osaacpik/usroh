@@ -29,5 +29,10 @@ cd ../pulldata
 
 sleep 60
 
-python2 zeronet.py  --tor always  siteDownload $Site1
+python2 zeronet.py  --fileserver_port 6530 --tor always  siteDownload $Site1
+
+cd ../ZeroNet-master
+
+python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
+
 
