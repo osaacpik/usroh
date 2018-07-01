@@ -21,9 +21,7 @@ cp -a ZeroNet-master pulldata
 cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
-cp ../usroh-master/torrc .
 
-tor -f torrc &
 
 sleep 10
 
@@ -31,8 +29,10 @@ python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PAS
 
 cd ../pulldata
 
-cp ../usroh-master/
-python2 zeronet.py  --tor always siteDownload $Site1
+cp ../usroh-master/torrc .
+
+tor -f torrc &
+python2 zeronet.py  --tor always --tor_controller 127.0.0.1:9981 --tor_proxy 127.0.0.1:9980 siteDownload $Site1
 
 # 
 
