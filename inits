@@ -28,8 +28,12 @@ python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT &
 
 sleep 121
 
-curl $Site2
+curl $Site2 &
 
+sleep 10
+
+killall python2
+killall python2
 
 python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
 
