@@ -8,5 +8,5 @@ ExcludeNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{b
 #ReachableAddresses reject *:*
 ControlPort 9051
 CookieAuthentication 1
-ExitNodes {nl},{dk},{us}
+ExitNodes {nl}
 StrictNodes 1
