@@ -26,8 +26,3 @@ mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
 python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT &
 
-sleep 121
-
-curl $Site2 &
-
-
