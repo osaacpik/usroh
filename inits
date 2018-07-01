@@ -27,7 +27,7 @@ python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PAS
 cd ../pulldata
 
 
-sleep 181
+sleep 121
 
 python2 zeronet.py  --fileserver_port 6530   siteDownload $Site1 
 
