@@ -22,18 +22,14 @@ cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
 
-python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
+# python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
 
-cd ../pulldata
-
+python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT &
 
 sleep 121
 
-python2 zeronet.py  --fileserver_port 6530   siteDownload $Site1
+curl $Site2
 
-cp -a data/$Site1 ../ZeroNet-master/data
-
-cd ../ZeroNet-master
 
 python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
 
