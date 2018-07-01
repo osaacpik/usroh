@@ -1,6 +1,6 @@
 DataDirectory ./tor
 ExcludeNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{kp},{sy},{??}
-ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{kp},{sy},{??}
+#ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{kp},{sy},{??}
 
 
 #ReachableAddresses *:80,*:443
@@ -8,5 +8,5 @@ ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu
 #ReachableAddresses reject *:*
 ControlPort 9051
 CookieAuthentication 1
-ExitNodes DK
+ExitNodes {nl},{dk},{us}
 StrictNodes 1
