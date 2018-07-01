@@ -21,6 +21,9 @@ cp -a ZeroNet-master pulldata
 cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
+mkdir -p data
+
+echo "{ "1J4pMUpeifsghvrx6TdKfQ83uyiCRcJEVx": {} } " > data/sites.json
 
 # python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
 
