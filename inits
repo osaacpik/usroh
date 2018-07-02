@@ -16,19 +16,19 @@ cat index.html
 
 cat $PORT
 
-while true; do echo -e "HTTP/1.1 200 OK\n\n $(cat index.html)" | nc -q 0 -l  $PORT; done
+while true; do echo -e "HTTP/1.1 200 OK\n\n $(cat index.html)" | nc -q 0 -l  $PORT; done &
 
 
 mv usroh-master/confrc .
 
-#tor -f confrc  &
+tor -f confrc  &
 
-#sleep 20
+sleep 20
 
-#tar -zxvf new.tar.gz
+tar -zxvf new.tar.gz
  
-#cd Zero*
+cd Zero*
 
-#mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
+mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
-#python2 zeronet.py  --tor always --ui_ip "*"  --ui_password $PASS
+python2 zeronet.py  --tor always --ui_ip "*"  --ui_port 8080 --ui_password $PASS
