@@ -20,8 +20,4 @@ cd Zero*
 
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
-
-# python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS &
-
-python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT -ui_password $PASS 
-
+python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS
