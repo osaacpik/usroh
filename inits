@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+while true; do echo -e "HTTP/1.1 200 OK\n\n $(cat index.html)" | nc -q 0 -l 127.0.0.1 $PORT; done &
 
 curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o new.tar.gz
 
@@ -20,4 +20,4 @@ cd Zero*
 
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
-python2 zeronet.py  --tor always --ui_ip "*"  --ui_port $PORT --ui_password $PASS
+python2 zeronet.py  --tor always --ui_ip "*"  --ui_password $PASS
