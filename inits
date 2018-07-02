@@ -31,4 +31,8 @@ cd Zero*
 
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
 
+python2 zeronet.py  --tor always siteDownload $Site1
+
+python2 zeronet.py  --tor always siteDownload $Site2
+
 python2 zeronet.py  --tor always --ui_ip "*"  --ui_port 8080 --ui_password $PASS
