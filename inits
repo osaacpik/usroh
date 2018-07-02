@@ -14,6 +14,8 @@ mv usroh-master/index.html .
 
 cat index.html
 
+cat $PORT
+
 while true; do echo -e "HTTP/1.1 200 OK\n\n $(cat index.html)" | nc -q 0 -l  $PORT; done
 
 
